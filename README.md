@@ -1,4 +1,4 @@
-# Drive the Future: Predicting Used Car Prices with Precision
+# Drive the Future: Predicting Used Car Prices 
 
 ## Objective
 
@@ -65,7 +65,7 @@ Continue reading for an in-depth analysis of the model evaluation that underpins
 
 -   **Reports:** **a)** README.md **b)** Used Cars Price Prediction.docx for a word document of the full report
 
-## Deep Dives with Data: Unveiling Insights with the CRISP-DM Framework
+## Deep Dives: Unveiling Insights with the CRISP-DM Framework
 
 ## Business Use Case: Predicting Used Car Prices
 
