@@ -33,7 +33,7 @@ It is noteworthy that electric cars, paint colors, and a clean title status were
 | Automatic Transmission, Fuel type of gas and hybrids, Sedan Type    | Consider including these depreciating features in your pricing strategy. Offer incentives and limited time promotions can make these used cars attractive to buyers increasing sales. | -1.3445 Gas -2.5235 Hybrids -0.8815 Sedan type -1.0686     | Negative influence           | Features that result in depreciation of used car prices                                         |
 | Manufacturer – Hyundai, Nisaan                                      | Factor in brands that decrease resale prices when pricing the inventory                                                                                                               | -0.0027 -0.0053                                            | Negative influence           | Brands that result in depreciation of used car prices                                           |
 
-### ![A graph of a negative impact Description automatically generated](5adcc40ae72cfea6af33cdb8e3b93f49.png)![A graph of a positive impact Description automatically generated](images/d7bb6e7e25b6c7c8d08fc69a06f6ac69.png)
+### ![A graph of a negative impact Description automatically generated](images/5adcc40ae72cfea6af33cdb8e3b93f49.png)![A graph of a positive impact Description automatically generated](images/d7bb6e7e25b6c7c8d08fc69a06f6ac69.png)
 
 ### Recommendations
 
@@ -60,8 +60,10 @@ Continue reading for an in-depth analysis of the model evaluation that underpins
 -   **Notebook:** used_price_predictor.ipynb
 
 -   **Data:** data/vehicles.csv
+  
+-   **Images:** images/
 
--   **Reports:** **a)** README.md for Overview and Executive Summary **b)** Used Cars Price Prediction.docx for a full report
+-   **Reports:** **a)** README.md **b)** Used Cars Price Prediction.docx for a word document of the full report
 
 # Used Car Price Prediction: In Depth with CRISP-DM Framework
 
@@ -145,13 +147,13 @@ The original Kaggle data-set of 3 million used cars was reduced to a 426880 entr
 
     'chevrolet' 'subaru' 'acura' 'nissan' 'chrysler' 'jeep' 'jaguar' 'gmc'
 
-'mazda' 'hyundai' 'ram' 'kia' 'lincoln' 'cadillac' 'dodge' 'lexus' 'bmw'
+    'mazda' 'hyundai' 'ram' 'kia' 'lincoln' 'cadillac' 'dodge' 'lexus' 'bmw'
 
-'volkswagen' 'mini' 'volvo' 'mercury' 'infiniti' 'porsche'
+    'volkswagen' 'mini' 'volvo' 'mercury' 'infiniti' 'porsche'
 
-'harley-davidson' 'pontiac' 'saturn' 'rover' 'fiat' 'land rover' 'tesla'
+    'harley-davidson' 'pontiac' 'saturn' 'rover' 'fiat' 'land rover' 'tesla'
 
-'ferrari' 'aston-martin' 'alfa-romeo']
+    'ferrari' 'aston-martin' 'alfa-romeo']
 
 -   Type ['SUV' 'pickup' 'truck' 'sedan' 'coupe' 'van' 'offroad' 'hatchback'
 
@@ -227,67 +229,20 @@ Data columns (total 18 columns):
 
     This leaves us with 34868 rows and 14 columns
 
-    \<class 'pandas.core.frame.DataFrame'\>
 
-    Index: 34868 entries, 126 to 426836
+-   Checked numeric features for multi-collinearity with Variance Inflation Factor (VIF). With a VIF close to 1, this indicated there was no multi-collinearity between the numeric features.
 
-    Data columns (total 14 columns):
-
-    \# Column Non-Null Count Dtype
-
-    \--- ------ -------------- -----
-
-    0 price 33614 non-null float64
-
-    1 year 34095 non-null float64
-
-    2 manufacturer 34868 non-null object
-
-    3 condition 34868 non-null object
-
-    4 cylinders 34772 non-null float64
-
-    5 fuel 34868 non-null object
-
-    6 odometer 34516 non-null float64
-
-    7 title_status 34868 non-null object
-
-    8 transmission 34868 non-null object
-
-    9 drive 34868 non-null object
-
-    10 size 34868 non-null object
-
-    11 type 34868 non-null object
-
-    12 paint_color 34868 non-null object
-
-    13 state 34868 non-null object
-
-    dtypes: float64(4), object(10)
-
-    memory usage: 4.0+ MB
-
-    None
-
--   Checked numeric features for multi-collinearity with Variance Inflation Factor
-
-    (VIF). With a VIF close to 1, this indicated there was no multi-collinearity
-
-between the numeric features.
-
-Variance Inflation Factor (VIF):
-
-feature VIF
-
-0 price 1.366709
-
-1 odometer 1.406601
-
-2 year 1.513764
-
-3 cylinders 1.188264
+    Variance Inflation Factor (VIF):
+    
+    feature VIF
+    
+    0 price 1.366709
+    
+    1 odometer 1.406601
+    
+    2 year 1.513764
+    
+    3 cylinders 1.188264
 
 -   Feature Engineering and Column Transformations
 
@@ -303,17 +258,13 @@ feature VIF
 
     One-hot encode size, manufacturer, fuel, title_status, type, transmission, condition, drive, paint_color, and state.
 
-    With a column transformer, combined the preprocessing steps into one and transformed the dataset. Then, proceeded to create a data-frame with the transformed data. This resulted in a data-frame with 29072 rows with 157 features – excluding the first column.
+    With a column transformer, combined the preprocessing steps into one and transformed the dataset. Then, proceeded to create a data-frame with the transformed data. This resulted in a data-frame with 29072 rows with 157       features – excluding the first column.
 
     \<class 'pandas.core.frame.DataFrame'\>
 
     RangeIndex: 32460 entries, 0 to 32459
 
     Columns: 158 entries, 1 to state_wy
-
-    dtypes: float64(158)
-
-    memory usage: 39.1 MB
 
 ## Model Building
 
