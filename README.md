@@ -12,7 +12,7 @@ This report deep dives into a reduced-size Kaggle dataset containing information
 
 ### These features ranked by permutation importance, include the combined impact of price and year of manufacture, followed by year of manufacture by itself. Additionally, significant factors include cylinders, combined impacts of year and cylinder, year and odometer, price and odometer, price and cylinders, fuel type (diesel and gas), specific states like Oklahoma, truck models, manufacturers such as Mitsubishi and Porsche, and transmission types (automatic and manual), particularly sedan variants.
 
-![](e1885902c574b52a44fb67becf32a227.png)
+![](images/e1885902c574b52a44fb67becf32a227.png)
 
 ### Insights and Implications
 
@@ -33,7 +33,7 @@ It is noteworthy that electric cars, paint colors, and a clean title status were
 | Automatic Transmission, Fuel type of gas and hybrids, Sedan Type    | Consider including these depreciating features in your pricing strategy. Offer incentives and limited time promotions can make these used cars attractive to buyers increasing sales. | -1.3445 Gas -2.5235 Hybrids -0.8815 Sedan type -1.0686     | Negative influence           | Features that result in depreciation of used car prices                                         |
 | Manufacturer – Hyundai, Nisaan                                      | Factor in brands that decrease resale prices when pricing the inventory                                                                                                               | -0.0027 -0.0053                                            | Negative influence           | Brands that result in depreciation of used car prices                                           |
 
-### ![A graph of a negative impact Description automatically generated](5adcc40ae72cfea6af33cdb8e3b93f49.png)![A graph of a positive impact Description automatically generated](d7bb6e7e25b6c7c8d08fc69a06f6ac69.png)
+### ![A graph of a negative impact Description automatically generated](5adcc40ae72cfea6af33cdb8e3b93f49.png)![A graph of a positive impact Description automatically generated](images/d7bb6e7e25b6c7c8d08fc69a06f6ac69.png)
 
 ### Recommendations
 
@@ -119,50 +119,6 @@ The original Kaggle data-set of 3 million used cars was reduced to a 426880 entr
 
 18. **state:** The state where the car is listed.
 
-    RangeIndex: 426880 entries, 0 to 426879
-
-    Data columns (total 18 columns):
-
-    \# Column Non-Null Count Dtype
-
-    \--- ------ -------------- -----
-
-    0 id 426880 non-null int64
-
-    1 region 426880 non-null object
-
-    2 price 426880 non-null int64
-
-    3 year 425675 non-null float64
-
-    4 manufacturer 409234 non-null object
-
-    5 model 421603 non-null object
-
-    6 condition 252776 non-null object
-
-    7 cylinders 249202 non-null object
-
-    8 fuel 423867 non-null object
-
-    9 odometer 422480 non-null float64
-
-    10 title_status 418638 non-null object
-
-    11 transmission 424324 non-null object
-
-    12 VIN 265838 non-null object
-
-    13 drive 296313 non-null object
-
-    14 size 120519 non-null object
-
-    15 type 334022 non-null object
-
-    16 paint_color 296677 non-null object
-
-    17 state 426880 non-null object
-
 ### Dataset Exploration
 
 -   Numeric Features – price, odometer, year
@@ -177,7 +133,7 @@ The original Kaggle data-set of 3 million used cars was reduced to a 426880 entr
 
 -   Distribution of Year of manufacturer showed a range inclusive of years 2000 - 2020
 
-![A graph of a number of objects Description automatically generated with medium confidence](9db01ecaf992004f55227ec7ed7f80c4.jpeg)
+![A graph of a number of objects Description automatically generated with medium confidence](images/9db01ecaf992004f55227ec7ed7f80c4.jpeg)
 
 ### Explored distributions of all Categorical Features
 
@@ -225,13 +181,13 @@ With a 10K sample size, there were no visible linear relations between Car Price
 
 Year of Manufacture with any of its categorical features or numerical features
 
-![A graph of a graph showing a number of blue dots Description automatically generated with medium confidence](a7d2be764ba926320726655ed87a0b9e.png)
+![A graph of a graph showing a number of blue dots Description automatically generated with medium confidence](images/a7d2be764ba926320726655ed87a0b9e.png)
 
-![A graph showing the difference between used cars Description automatically generated](bcc6002db8fb6a595ecaac04ed51906c.png)
+![A graph showing the difference between used cars Description automatically generated](images/bcc6002db8fb6a595ecaac04ed51906c.png)
 
-![A graph of different colored dots Description automatically generated](3c6e04def055f87bf9198e5b2e460b7a.jpeg)![A screen shot of a graph Description automatically generated](7fb10f0bc66177c9840dd2bdb01a8910.jpeg)
+![A graph of different colored dots Description automatically generated](images/3c6e04def055f87bf9198e5b2e460b7a.jpeg)![A screen shot of a graph Description automatically generated](images/7fb10f0bc66177c9840dd2bdb01a8910.jpeg)
 
-![A graph of colored dots Description automatically generated](d3e9954c4af7bc44fb10c976724504b7.jpeg)![A graph showing different colored dots Description automatically generated](7751f2e85cc0a5775579c00255988f76.jpeg)![A graph of blue dots Description automatically generated with medium confidence](3ffda3a0f3ff09c9cd0f5deb505118c3.jpeg)![A graph showing a number of dots Description automatically generated with medium confidence](7b8885ce8149cdc57dbdd601a9002ef7.jpeg)![A graph showing different colored dots Description automatically generated](3f33c0b93d1f3399d0ca827bc20068f3.jpeg)![A graph showing different colored dots Description automatically generated](18dd216224d44d045f7c6b5732c1f429.jpeg)
+![A graph of colored dots Description automatically generated](images/d3e9954c4af7bc44fb10c976724504b7.jpeg)![A graph showing different colored dots Description automatically generated](images/7751f2e85cc0a5775579c00255988f76.jpeg)![A graph of blue dots Description automatically generated with medium confidence](images/3ffda3a0f3ff09c9cd0f5deb505118c3.jpeg)![A graph showing a number of dots Description automatically generated with medium confidence](images/7b8885ce8149cdc57dbdd601a9002ef7.jpeg)![A graph showing different colored dots Description automatically generated](images/3f33c0b93d1f3399d0ca827bc20068f3.jpeg)![A graph showing different colored dots Description automatically generated](images/18dd216224d44d045f7c6b5732c1f429.jpeg)
 
 ## Data Preparation and Preprocessing
 
@@ -241,13 +197,13 @@ This section walks us through step wise data preparation and processing steps th
 
 To address the skewed price distribution, retained prices between 2K – 80K USD. This effectively removed prices outside the selected lower and upper bound. DataSet size reduced from 426880 entries to about 372276 entries. This normalized the price, distributions as seen in plot below.
 
-![A graph of a car sales Description automatically generated with medium confidence](5b6d0da67364e40aec8f6f305bce747b.jpeg)
+![A graph of a car sales Description automatically generated with medium confidence](images/5b6d0da67364e40aec8f6f305bce747b.jpeg)
 
-![A graph of a distribution of price Description automatically generated](cd99e3427452efaa59af4405e46775d8.jpeg)
+![A graph of a distribution of price Description automatically generated](images/cd99e3427452efaa59af4405e46775d8.jpeg)
 
 -   Missing Values – Dropped entries with missing values. This further reduced the data-set with the number of rows/entries as 31278.
 
-![](dba32d43d5ea47f1b76e010a729fbe80.jpeg)
+![](images/dba32d43d5ea47f1b76e010a729fbe80.jpeg)
 
 -   Outlier Analysis with Price and Odometer ranges
 
@@ -255,7 +211,7 @@ To address the skewed price distribution, retained prices between 2K – 80K USD
 
     Attempted to see if a log transform and sqrt transform of Price and Odometer would change – however with no change observed, did not retain these transformations with Price and Odometer features.
 
-    ![A close-up of a graph Description automatically generated](297cad087598d2e41d5508b0355886f5.jpeg)
+    ![A close-up of a graph Description automatically generated](images/297cad087598d2e41d5508b0355886f5.jpeg)
 
 -   Reduced data-set size is now at 31278 rows with threshold price filters, missing rows cleaned and attempts to remove any outliers. Distribution of price in this data-set is as observed below.
 
@@ -265,7 +221,7 @@ Index: 31278 entries, 215 to 426833
 
 Data columns (total 18 columns):
 
-![A graph with blue bars Description automatically generated](cdc70da32673f5edf6b46922013044e2.jpeg)
+![A graph with blue bars Description automatically generated](images/cdc70da32673f5edf6b46922013044e2.jpeg)
 
 -   Transformed categorical feature cylinders to a numerical feature. Dropped category features model, and region with a large number of unique values. Instead, decided to retain manufacturer and state for similar information of a used car. Proceeded to also drop unique car identifiers – Id and VIN as well.
 
@@ -399,15 +355,15 @@ We concluded that feature selection techniques combined with regularization, suc
 
 ### Evaluation Metrics
 
-![A graph with orange lines Description automatically generated](ffe4b5cfcd28d2236309d641849394fd.jpeg) ![A close-up of a white screen Description automatically generated](6e2c2381b466e5be4b3e85ab47f63e6d.jpeg)
+![A graph with orange lines Description automatically generated](images/ffe4b5cfcd28d2236309d641849394fd.jpeg) ![A close-up of a white screen Description automatically generated](images/6e2c2381b466e5be4b3e85ab47f63e6d.jpeg)
 
 ### Learning Curves
 
-![A graph of a graph showing the difference between a line and a line Description automatically generated with medium confidence](2935d42e618c1c66eef8d56711440bdf.png)
+![A graph of a graph showing the difference between a line and a line Description automatically generated with medium confidence](images/2935d42e618c1c66eef8d56711440bdf.png)
 
 ### Actual vs Predicted Prices
 
-**![A graph showing a line Description automatically generated with medium confidence](7b64212678df9cd69aaa0b8772363e11.png)**
+**![A graph showing a line Description automatically generated with medium confidence](images/7b64212678df9cd69aaa0b8772363e11.png)**
 
 ### Conclusion
 
