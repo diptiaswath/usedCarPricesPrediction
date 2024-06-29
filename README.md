@@ -179,9 +179,7 @@ The original Kaggle data-set of 3 million used cars was reduced to a 426880 entr
 
 ### Observations with Distribution of Year and Price of used cars across category features
 
-With a 10K sample size, there were no visible linear relations between Car Price and
-
-Year of Manufacture with any of its categorical features or numerical features
+With a 10K sample size, there were no visible linear relations between Car Price and Year of Manufacture with any of its categorical features or numerical features
 
 ![A graph of a graph showing a number of blue dots Description automatically generated with medium confidence](images/a7d2be764ba926320726655ed87a0b9e.png)
 
@@ -203,7 +201,7 @@ To address the skewed price distribution, retained prices between 2K – 80K USD
 
 ![A graph of a distribution of price Description automatically generated](images/cd99e3427452efaa59af4405e46775d8.jpeg)
 
--   Missing Values – Dropped entries with missing values. This further reduced the data-set with the number of rows/entries as 31278.
+-   Dropped entries with missing values. This further reduced the data-set with the number of rows/entries as 31278.
 
 ![](images/dba32d43d5ea47f1b76e010a729fbe80.jpeg)
 
@@ -217,12 +215,6 @@ To address the skewed price distribution, retained prices between 2K – 80K USD
 
 -   Reduced data-set size is now at 31278 rows with threshold price filters, missing rows cleaned and attempts to remove any outliers. Distribution of price in this data-set is as observed below.
 
-\<class 'pandas.core.frame.DataFrame'\>
-
-Index: 31278 entries, 215 to 426833
-
-Data columns (total 18 columns):
-
 ![A graph with blue bars Description automatically generated](images/cdc70da32673f5edf6b46922013044e2.jpeg)
 
 -   Transformed categorical feature cylinders to a numerical feature. Dropped category features model, and region with a large number of unique values. Instead, decided to retain manufacturer and state for similar information of a used car. Proceeded to also drop unique car identifiers – Id and VIN as well.
@@ -232,39 +224,21 @@ Data columns (total 18 columns):
 
 -   Checked numeric features for multi-collinearity with Variance Inflation Factor (VIF). With a VIF close to 1, this indicated there was no multi-collinearity between the numeric features.
 
-    Variance Inflation Factor (VIF):
-    
-    feature VIF
-    
-    0 price 1.366709
-    
-    1 odometer 1.406601
-    
-    2 year 1.513764
-    
-    3 cylinders 1.188264
-
 -   Feature Engineering and Column Transformations
 
     **Numeric Features**:
 
-    Imputes missing values with the median.
+    -  Imputes missing values with the median.
 
-    Generates polynomial features of degree 2 for price, odometer, year, and cylinders.
+    -  Generates polynomial features of degree 2 for price, odometer, year, and cylinders.
 
     **Categorical Features**:
 
-    Impute missing values with the most frequent value.
+    -  Impute missing values with the most frequent value.
 
-    One-hot encode size, manufacturer, fuel, title_status, type, transmission, condition, drive, paint_color, and state.
+    -  One-hot encode size, manufacturer, fuel, title_status, type, transmission, condition, drive, paint_color, and state.
 
     With a column transformer, combined the preprocessing steps into one and transformed the dataset. Then, proceeded to create a data-frame with the transformed data. This resulted in a data-frame with 29072 rows with 157       features – excluding the first column.
-
-    \<class 'pandas.core.frame.DataFrame'\>
-
-    RangeIndex: 32460 entries, 0 to 32459
-
-    Columns: 158 entries, 1 to state_wy
 
 ## Model Building
 
