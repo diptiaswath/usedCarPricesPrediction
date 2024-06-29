@@ -296,13 +296,13 @@ We concluded that feature selection techniques combined with regularization, suc
 
 ## Model Evaluation of Best Model with Ridge Regression
 
-### This best model performs well in predicting used car prices, exhibiting moderate variance.
+This best model performs well in predicting used car prices, exhibiting moderate variance.
 
-### With the Train and Test MSE both low and close to each other, it indicates that the model strikes a good balance between bias and variance, with no significant overfitting or underfitting.
+With the Train and Test MSE both low and close to each other, it indicates that the model strikes a good balance between bias and variance, with no significant overfitting or underfitting.
 
-### Using 5-fold cross-validation, the best Train and best Test MSE values for the k-folds are also close to each other, further confirming the model's robustness and generalizability.
+Using 5-fold cross-validation, the best Train and best Test MSE values for the k-folds are also close to each other, further confirming the model's robustness and generalizability.
 
-### Learning curves also assist in visualizing how this model trades-off between bias and variance across different training set sizes. The plot demonstrates a pattern where both training and validation errors decrease and eventually converge, suggesting the model’s generalizes well with reduced variance.
+Learning curves also assist in visualizing how this model trades-off between bias and variance across different training set sizes. The plot demonstrates a pattern where both training and validation errors decrease and eventually converge, suggesting the model’s generalizes well with reduced variance.
 
 ### Evaluation Metrics
 
