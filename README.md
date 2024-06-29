@@ -39,17 +39,17 @@ It is noteworthy that electric cars, paint colors, and a clean title status were
 
 Based on features identified as having higher importance in influencing the price of used cars, here are some recommendations.
 
-**Focus on Pricing Strategy**: Given the strong influence of price and year of manufacture together, optimize pricing strategies that consider both factors comprehensively.
+-   **Focus on Pricing Strategy**: Given the strong influence of price and year of manufacture together, optimize pricing strategies that consider both factors comprehensively.
 
-**Highlight Year of Manufacture**: Emphasize the year of manufacture prominently in vehicle listings and marketing materials, as it significantly impacts pricing.
+-   **Highlight Year of Manufacture**: Emphasize the year of manufacture prominently in vehicle listings and marketing materials, as it significantly impacts pricing.
 
-**Manage Mileage**: Since odometer (mileage) is influential, prioritize vehicles with lower mileage or provide transparency and justification for higher mileage vehicles.
+-   **Manage Mileage**: Since odometer (mileage) is influential, prioritize vehicles with lower mileage or provide transparency and justification for higher mileage vehicles.
 
-**Consider Fuel Efficiency**: Given the impact of fuel type (diesel and gas), consider promoting vehicles with fuel-efficient technologies or highlighting their cost-effectiveness.
+-   **Consider Fuel Efficiency**: Given the impact of fuel type (diesel and gas), consider promoting vehicles with fuel-efficient technologies or highlighting their cost-effectiveness.
 
-**Regional Considerations**: Recognize the influence of specific states like Oklahoma and tailor marketing or pricing strategies accordingly for regional markets.
+-   **Regional Considerations**: Recognize the influence of specific states like Oklahoma and tailor marketing or pricing strategies accordingly for regional markets.
 
-**Model and Transmission Preferences**: Cater to preferences for specific truck types, manufacturers like Mitsubishi and Porsche, and transmission types (automatic and manual) by ensuring a diverse inventory that meets varied customer preferences.
+-   **Model and Transmission Preferences**: Cater to preferences for specific truck types, manufacturers like Mitsubishi and Porsche, and transmission types (automatic and manual) by ensuring a diverse inventory that meets varied customer preferences.
 
 Continue reading for an in-depth analysis of the model evaluation that underpins the findings and recommendations discussed.
 
