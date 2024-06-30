@@ -10,7 +10,7 @@ This repository deep dives into a reduced-size Kaggle dataset containing informa
 
 Key features influence the price of used cars. While there is no linear relationship between the price of a used car and other features, non-linear relationships, including polynomial features of independent variables, significantly influence the target price of used cars.
 
-These features ranked by permutation importance, include the combined impact of price and year of manufacture, followed by year of manufacture by itself. Additionally, significant factors include cylinders, combined impacts of year and cylinder, year and odometer, price and odometer, price and cylinders, fuel type (diesel and gas), specific states like Oklahoma, truck models, manufacturers such as Mitsubishi and Porsche, and transmission types (automatic and manual), particularly sedan variants.
+The features ranked by permutation importance include the combined impact of price and year of manufacture, followed by the year of manufacture alone. Other significant factors are the number of cylinders, the interactions between year and cylinders, year and odometer, price and odometer, and price and cylinders. Additionally, fuel type (diesel and gas), specific states such as Oklahoma, truck models, manufacturers like Mitsubishi and Porsche, and transmission types (automatic and manual), especially in sedan variants, also play important roles.
 
 ![](images/e1885902c574b52a44fb67becf32a227.png)
 
