@@ -4,6 +4,7 @@
 
 This repository offers an in-depth analysis of a reduced-size Kaggle dataset containing information on 426,000 used cars. Its objective is to identify the factors influencing used car pricing through exploratory data analysis and machine learning models, following the CRISP-DM framework https://en.wikipedia.org/wiki/Cross-industry_standard_process_for_data_mining. Accurate predictions of used car prices aim to benefit stakeholders, including car dealerships, individual sellers and buyers, and financial institutions.
 
+
 ## Executive Summary
 
 ### Key Findings
