@@ -56,7 +56,7 @@ Continue reading for an in-depth analysis of the model evaluation that underpins
 
 ## GitHub Repository Structure
 
--   https://github.com/diptiaswath/usedCarsPricePrediction/
+-   [https://github.com/diptiaswath/usedCarsPricePrediction/](https://github.com/diptiaswath/usedCarPricesPrediction)
 
 -   **Notebook:** used_price_predictor.ipynb
 
